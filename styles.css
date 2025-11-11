@@ -1,0 +1,126 @@
+body {
+  background-color: rgb(13, 1, 27);
+  color: azure;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+p,
+button {
+  color: aliceblue;
+}
+.container {
+  padding: o 80px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.logo {
+  margin-right: 160px;
+  width: 200px;
+}
+.navigation {
+  display: flex;
+  column-gap: 28px;
+  list-style: none;
+  margin-right: 57px;
+}
+.nav-element {
+  margin-right: 28px;
+}
+.cta-button {
+  margin-left: 57px;
+  display: block;
+  padding: 10px 32px;
+  border-radius: 40px;
+  background: linear-gradient(
+    89.75deg,
+    #5bdbfd 0.26%,
+    #7375ff 51.07%,
+    #df93ff 100.96%,
+    #e56f8c 126.34%
+  );
+  border: none;
+}
+.hero-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+}
+.hero-description {
+  font-size: 18px;
+  font-weight: 400;
+}
+.hero-subtitle {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 42px 0 18px 0;
+  background: linear-gradient(
+    90.63deg,
+    #90e8ff 0.44%,
+    #9c9eff 69.99%,
+    #e3a1ff 138.27%,
+    #e56f8c 173.01%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-title {
+  font-size: 96px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.hero-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 644px;
+  height: 466px;
+  border-radius: 16px;
+  background-image: url("./img/image\ 2.jpg");
+}
+.hero-text {
+  max-width: 580px;
+}
+.bg-gradient {
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+  .hero-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero-title {
+    text-align: center;
+  }
+  .hero-description {
+    text-align: center;
+  }
+  .hero-subtitle {
+    text-align: center;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px);
+ {
+  .hero-text {
+    width: 50%;
+  }
+}
